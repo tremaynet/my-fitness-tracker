@@ -142,8 +142,10 @@ if (workoutTypeSelect) {
 }
 if (completeButton) {
   completeButton.addEventListener("click", function (event) {
-    shouldNavigateAway = true;
-    handleFormSubmit(event);
+    // shouldNavigateAway = true;
+    event.preventDefault();
+    location.href = "/";
+    // handleFormSubmit(event);
   });
 }
 if (addButton) {

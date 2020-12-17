@@ -8,7 +8,8 @@ const exerciseSchema = mongoose.Schema(
     duration: Number,
     weight: Number,
     reps: Number,
-    sets: Number
+    sets: Number,
+    distance: Number,
   }
 )
 const workoutSchema = mongoose.Schema(
